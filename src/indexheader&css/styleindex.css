@@ -1,0 +1,290 @@
+html{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    font-size:13px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color:#919191;
+}
+.clear:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+}
+.clear{
+    display:block;
+    clear:both;}
+
+a{outline:none; text-decoration:none;}
+
+/*------HTML 5 ----*/
+
+address, article, header, nav, section{
+    display:block;
+    margin:0;
+    padding:0;
+}
+/* ------Wrapper-----*/
+
+.wrapper{
+    padding-top: 130px;
+    margin-left: 250px;
+    margin-right: 250px;
+
+}
+.row1, .row1 a{
+    color:#C0BAB6;
+
+}
+.row2{
+    color:#979797;
+    background-color:#151715
+}
+.row2 a{
+    color:#FF9900;
+    background-color:#151715
+}
+
+/*------Generalise------*/
+#header, #container, #footer{
+    display:block;
+    width:100%;
+    margin:0 auto;}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    font-style:normal;
+    line-height:normal;
+    text-transform:uppercase;}
+
+/*------Header-------*/
+#header nav{
+    display:block;
+    margin:0 0 0 0;
+    padding: 0;
+    color:#C0BAB6;
+}
+
+#header nav ul{
+    background-color:#232323;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+#header nav li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+.list{
+    float:right;
+    padding: 25px 16px;
+}
+
+#header nav li.logo{
+    float:right;
+}
+#header nav li a{
+    color:#C0BAB6;
+    background-color:#232323;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    font-size: 16px;
+}
+
+#header nav li a:hover{color:#FF9900; background-color:black;}
+
+
+
+
+/*----------Content Area-----------*/
+
+#container{
+    display: flex;
+}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+/* ------Homepage-----*/
+
+#container #homepage{
+    display:block;
+    width:100%;
+    line-height:1.6em;}
+
+
+/* ------Main Content-----*/
+#title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;}
+
+
+/*-------Footer-------*/
+footer a{
+    text-decoration: none;
+    color:#919191;
+}
+.footerWrap {
+    width:100%;
+    bottom: 0px;
+}
+footer {
+    width:400px;
+    margin:auto;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    padding:20px 0;
+}
+footer p{float:left; width:100%; text-align:center; }
+
+/*------Form------*/
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container a{
+    color:#FF9900;
+}
+
+#flex{
+    width:600px;
+}
+
+#flex1{
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.form-container > div {
+}
+
+.input-control span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-password{
+    font-size: 0.9rem;
+    font-weight: 400;
+    width:240px;
+    height: auto;
+    padding: 10px;
+    padding-left:20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #CDD9ED;
+    border-radius: 20px;
+}
+
+.input-field {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-left:20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #CDD9ED;
+    border-radius: 20px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #275EFE;
+}
+
+#register-container {
+    width: 100%;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register > div#register-form {
+    padding: 10px;
+}
+
+.btn{
+    width:100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f08f10;
+    border: 1px solid #f08f10;
+
+}
+.flex-pic{
+    width:700px;
+    flex-wrap:wrap;
+}
+.btn-reg{
+    text-align: center;
+    width:100%;
+}
+.btn-reg a{
+    width:100%;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 2px;
+    border-radius: 10px;
+    background-color: #1AA7EC;
+    color:#151715;
+    font-size: 16px;
+    display: inline;
+}
+
+
+/*----Profile----*/
+
+.container-prof {
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#avatar{
+    width: 100px;
+}
+/*---- Pop-up ----*/

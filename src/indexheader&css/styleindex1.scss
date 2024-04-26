@@ -1,0 +1,370 @@
+html{
+    margin:0;
+    padding:0;
+}
+
+.containerindex {
+    padding-top: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    
+    
+  }
+
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+  }
+
+  .navindex ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    }
+
+  .navindex li{
+    margin-left: 2em;
+  }
+
+  .navindex a {
+    font-size: 20px;
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .navindex a:hover,
+  .navindex a:focus {
+    color: #fd5f00;
+  }
+
+  @media (max-width: 640px) {
+    .containerindex {
+      text-align: center;
+    }
+
+    .container-nav {
+      flex-direction: column;
+    }
+
+    .navindex ul {
+      flex-direction: column;
+    }
+
+    .navindex li {
+      margin: 0.8em 0;
+    }
+
+    .box{
+      flex-direction: column;
+    }
+
+    .whitecontainer
+    {
+      padding:0px ;
+    }
+
+  }
+
+
+  #mainface {
+      display: block;
+      width: 100%;
+      height: 650px;
+      background: url(../images/backgroundfront.jpg)no-repeat bottom center/cover;
+      color: rgb(0, 0, 0);
+      padding: 0px;
+  }
+
+
+  .whitecontainer
+  {
+      width: 100%;
+      height: 650px;
+      background:rgba(139, 139, 139, 0.557);
+
+      display: block;
+  }
+  .getStartedBtn{
+      background-color:#f96c00;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: transform .4s;
+    width: 100px;
+  }
+  .getStartedBtn:hover{
+      transform: scale(1.3);
+  }
+
+  .getStarted{
+      background-color:#f98d00;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 5px 5px 5px 5px;
+    text-align: center;
+      border-radius: 10px;
+      transition: .4s;
+    height: 25px;
+    width: 200px;
+  }
+
+  .getStarted:hover{
+      background-color: transparent;
+      border: 2px solid #f95f00;
+      cursor: pointer;
+  }
+
+  .getStarted a
+  {
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  .mainview
+  {
+    margin-top: 200px;
+    margin-left: 200px;
+    height:500px;
+    width: 600px;
+
+  }
+  .mainview h1{
+    font-size: 40px;
+  }
+  .mainview p{
+    font-size: 16px;
+    text-align: justify;
+  }
+
+
+
+  /** carousel**/
+  .carousel {
+
+
+  }
+
+  ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  ul.slides input {
+    display: none;
+  }
+
+
+  .slide-container {
+    display: block;
+  }
+
+  .slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+  }
+
+  .slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+  }
+
+  .carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+  }
+
+  .slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+  }
+
+  .carousel-controls label:hover {
+    opacity: 1;
+  }
+
+  .carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+  }
+
+  .carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+  }
+
+  .carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+  }
+
+  .carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+  }
+
+  input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+  }
+
+  input:checked + .slide-container .carousel-controls label {
+     display: block;
+  }
+
+  input#img-1:checked ~ .carousel-dots label#img-dot-1,
+  input#img-2:checked ~ .carousel-dots label#img-dot-2,
+  input#img-3:checked ~ .carousel-dots label#img-dot-3,
+  input#img-4:checked ~ .carousel-dots label#img-dot-4,
+  input#img-5:checked ~ .carousel-dots label#img-dot-5,
+  input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+  }
+
+
+  input:checked + .slide-container .nav label { display: block; }
+
+  /** carousel**/
+
+
+  /** features **/
+  .featurescontainer{
+      background: url(../images/featuredphoto1.jpeg);
+      width: 100%;
+    height: 590px;
+    display: block;
+  }
+  .featuresoffer
+  {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    color:#fff;
+  }
+  .featurescontainerbox
+  {
+
+    padding-top:50px;
+
+    height: 540px;
+    width: 100%;
+    background:#303030c2;
+    display: block;
+  }
+
+  .box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+  }
+  .card{
+      height: 350px;
+      width: 370px;
+      padding: 10px 10px;
+    background-color: transparent;
+      border: 2px solid  #ffffff;
+      border-radius: 20px;
+      margin: 15px;
+      text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  .cardhead i
+  {
+    display: inline-block;
+  }
+  .cardhead h3{
+    display: inline-block;
+  }
+
+  .featurecard
+  {
+    height: 45px;
+  }
+  .featurecard i
+  {
+    display: inline-block;
+  }
+  .featurecard p
+  {
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .featurecard2
+  {
+    height: 365px;
+      width: 350px;
+    padding-left: 20px;
+    text-align: justify;
+
+  }
+
+  .featurecard2
+  {
+    font-size: 16px;
+  }
+  /** footer **/
+
